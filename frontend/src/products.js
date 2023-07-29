@@ -2,7 +2,7 @@ export const products = [
   {
     _id: "1",
     name: "Airpods Wireless Bluetooth Headphones",
-    image: "images/airpods.jpg",
+    image: "/images/airpods.jpg",
     descriptions:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience. Built-in microphone allows you to take calls while working",
     brand: "Apple",
@@ -15,7 +15,7 @@ export const products = [
   {
     _id: "2",
     name: "Camera",
-    image: "images/camera.jpg",
+    image: "/images/camera.jpg",
     descriptions:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience. Built-in microphone allows you to take calls while working",
     brand: "Apple",
@@ -28,7 +28,7 @@ export const products = [
   {
     _id: "3",
     name: "Alexa",
-    image: "images/alexa.jpg",
+    image: "/images/alexa.jpg",
     descriptions:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience. Built-in microphone allows you to take calls while working",
     brand: "Apple",
@@ -41,7 +41,7 @@ export const products = [
   {
     _id: "4",
     name: "Super Mouse",
-    image: "images/mouse.jpg",
+    image: "/images/mouse.jpg",
     descriptions:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience. Built-in microphone allows you to take calls while working",
     brand: "Apple",
@@ -54,7 +54,7 @@ export const products = [
   {
     _id: "5",
     name: "Nokia Phone",
-    image: "images/phone.jpg",
+    image: "/images/phone.jpg",
     descriptions:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience. Built-in microphone allows you to take calls while working",
     brand: "Apple",
@@ -67,13 +67,13 @@ export const products = [
   {
     _id: "6",
     name: "PlaySation 8",
-    image: "images/playstation.jpg",
+    image: "/images/playstation.jpg",
     descriptions:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience. Built-in microphone allows you to take calls while working",
     brand: "Apple",
     category: "Electronics",
     price: 9.99,
-    countInStock: 10,
+    countInStock: 0,
     rating: 400.5,
     numReviews: 102,
   },
