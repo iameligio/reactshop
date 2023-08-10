@@ -5,7 +5,21 @@ import User from "../models/userModel.js";
 // @route POST /api/users/login
 // @access Public
 const authUser = asyncHandler(async (req, res) => {
-  res.json("auth user");
+  const { email, password } = req.body;
+
+  const user = await User.findOne({ email });
+
+  if (user && (await user.matchPassword(password))) {
+    res.json({
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+      isAdmin: user.isAdmin,
+    });
+  } else {
+    res.status(401);
+    throw new Error("Invalid email or password");
+  }
 });
 
 // @desc Register user
@@ -60,7 +74,7 @@ const deleteUser = asyncHandler(async (req, res) => {
 // @desc Update user by id
 // @route PUT /api/users/:id
 // @access Private/Admin
-const updateUserById = asyncHandler(async (req, res) => {
+const updateUser = asyncHandler(async (req, res) => {
   res.json("update user by id");
 });
 
@@ -70,7 +84,7 @@ export {
   logoutUser,
   getUserById,
   deleteUser,
-  updateUserById,
+  updateUser,
   getUsers,
   updateUserProfile,
   getUserProfile,
